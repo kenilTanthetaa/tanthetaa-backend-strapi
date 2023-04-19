@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_meta_articles",
+  "info": {
+    "displayName": "MetaArticle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "publishedTime": {
+      "type": "datetime"
+    },
+    "modifiedTime": {
+      "type": "datetime"
+    },
+    "expirationTime": {
+      "type": "datetime"
+    },
+    "authors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.meta-author"
+    },
+    "section": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "string"
+    }
+  }
+}

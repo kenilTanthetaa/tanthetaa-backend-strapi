@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolio_main_tags",
+  "info": {
+    "singularName": "portfolio-main-tag",
+    "pluralName": "portfolio-main-tags",
+    "displayName": "PortfolioMainTag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    }
+  }
+}

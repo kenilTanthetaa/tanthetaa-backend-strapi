@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_social_contacts",
+  "info": {
+    "displayName": "SocialContact"
+  },
+  "options": {},
+  "attributes": {
+    "socialTag": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::social-tag.social-tag"
+    },
+    "socialUsername": {
+      "type": "string"
+    }
+  }
+}

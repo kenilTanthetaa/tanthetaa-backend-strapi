@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_budget_range_tags",
+  "info": {
+    "displayName": "budgetRangeTag",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "budgetRangeTag": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::budget-range-tag.budget-range-tag"
+    }
+  }
+}

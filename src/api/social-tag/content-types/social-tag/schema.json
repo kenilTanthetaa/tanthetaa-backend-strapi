@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_tags",
+  "info": {
+    "singularName": "social-tag",
+    "pluralName": "social-tags",
+    "displayName": "SocialTag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "socialName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "socialLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

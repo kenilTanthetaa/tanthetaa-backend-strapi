@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_contact_infos",
+  "info": {
+    "displayName": "contactInfo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "contactNumberTag": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact-number-tag.contact-number-tag"
+    },
+    "contactNumber": {
+      "type": "biginteger"
+    }
+  }
+}

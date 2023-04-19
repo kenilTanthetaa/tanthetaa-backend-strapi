@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_number_tags",
+  "info": {
+    "singularName": "contact-number-tag",
+    "pluralName": "contact-number-tags",
+    "displayName": "ContactNumberTag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "countryCode": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "countryName": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "countryLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

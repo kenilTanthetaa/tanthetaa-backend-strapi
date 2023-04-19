@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_portfolio_tags",
+  "info": {
+    "displayName": "portfolioTags",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mainTag": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::portfolio-main-tag.portfolio-main-tag"
+    },
+    "subTags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio-sub-tag.portfolio-sub-tag"
+    }
+  }
+}

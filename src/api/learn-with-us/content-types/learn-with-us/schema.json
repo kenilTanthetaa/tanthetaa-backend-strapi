@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "learn_with_uses",
+  "info": {
+    "singularName": "learn-with-us",
+    "pluralName": "learn-with-uses",
+    "displayName": "LearnWithUs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string"
+    },
+    "currentCity": {
+      "type": "string"
+    },
+    "college": {
+      "type": "string"
+    },
+    "degree": {
+      "type": "string"
+    },
+    "aboutYou": {
+      "type": "text"
+    },
+    "nativeLanguage": {
+      "type": "string"
+    },
+    "contactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.contact-info"
+    },
+    "resume": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "email": {
+      "type": "email"
+    },
+    "courseOrInternship": {
+      "type": "string"
+    },
+    "comfortableInEnglish": {
+      "type": "string"
+    }
+  }
+}

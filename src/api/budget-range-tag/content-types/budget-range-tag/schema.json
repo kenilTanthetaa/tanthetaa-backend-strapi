@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "budget_range_tags",
+  "info": {
+    "singularName": "budget-range-tag",
+    "pluralName": "budget-range-tags",
+    "displayName": "BudgetRangeTag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "budgetName": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}
