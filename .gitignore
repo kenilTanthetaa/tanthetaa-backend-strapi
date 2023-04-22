@@ -76,6 +76,8 @@ $RECYCLE.BIN/
 # Misc.
 ############################
 
+public
+./public
 *#
 ssl
 .idea
