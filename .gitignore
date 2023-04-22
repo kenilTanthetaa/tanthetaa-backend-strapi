@@ -76,13 +76,12 @@ $RECYCLE.BIN/
 # Misc.
 ############################
 
-public
-./public
+
+/public/uploads
 *#
 ssl
 .idea
 nbproject
-public/uploads/*
 !public/uploads/.gitkeep
 
 ############################
