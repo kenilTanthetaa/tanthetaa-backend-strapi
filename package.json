@@ -16,6 +16,7 @@
     "@strapi/plugin-users-permissions": "4.9.0",
     "@strapi/strapi": "4.9.0",
     "better-sqlite3": "^8.2.0",
+    "mysql": "^2.18.1",
     "pg": "8.8.0",
     "strapi-plugin-populate-deep": "^2.0.0",
     "strapi-plugin-reading-time": "^1.0.0",

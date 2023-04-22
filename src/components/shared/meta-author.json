@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_shared_meta_authors",
+  "collectionName": "csmau",
   "info": {
     "displayName": "MetaAuthor",
     "description": ""
@@ -18,10 +18,7 @@
     },
     "gender": {
       "type": "enumeration",
-      "enum": [
-        "male",
-        "female"
-      ]
+      "enum": ["male", "female"]
     },
     "website": {
       "type": "string"
@@ -30,12 +27,7 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "description": {
       "type": "text"

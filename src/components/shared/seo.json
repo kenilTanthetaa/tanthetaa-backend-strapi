@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_shared_seos",
+  "collectionName": "csse",
   "info": {
     "displayName": "seo",
     "description": ""
@@ -21,11 +21,7 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
+      "allowedTypes": ["images", "files", "videos"]
     },
     "keywords": {
       "type": "text",
