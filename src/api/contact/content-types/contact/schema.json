@@ -49,6 +49,9 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.budget-range-tag"
+    },
+    "sendNda": {
+      "type": "boolean"
     }
   }
 }
