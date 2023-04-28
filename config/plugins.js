@@ -21,7 +21,7 @@ module.exports = ({ env }) => ({
   upload: {
     config: {
       providerOptions: {
-        sizeLimit: 256 * 1024 * 1024, // 256 MB
+        sizeLimit: 268435456, // 256 MB
         localServer: {},
       },
     },
