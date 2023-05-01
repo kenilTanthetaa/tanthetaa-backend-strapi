@@ -53,6 +53,17 @@
     },
     "readingTime": {
       "type": "string"
+    },
+    "titleImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
