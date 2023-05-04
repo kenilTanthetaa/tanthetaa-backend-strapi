@@ -18,7 +18,7 @@
     },
     "about": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "position": {
       "type": "string",
@@ -40,18 +40,20 @@
       "inversedBy": "members"
     },
     "gif": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
