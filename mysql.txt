@@ -1,2 +1,2 @@
-userName:tanthetaa
-Pass:Tanthetaa@2022
+Email: root@gmail.com
+Password: Tanthetaa@2022

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_category_tags",
+  "info": {
+    "singularName": "team-category-tag",
+    "pluralName": "team-category-tags",
+    "displayName": "TeamCategoryTag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "members": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::team-member.team-member",
+      "mappedBy": "category"
+    }
+  }
+}
