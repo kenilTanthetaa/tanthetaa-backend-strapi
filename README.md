@@ -1,57 +1,54 @@
-# 🚀 Getting started with Strapi
+# Bash Commands
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+## Installation
 
-### `develop`
-
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
-
+```bash
+npm i
 ```
+
+## Development
+
+```bash
 npm run develop
-# or
-yarn develop
 ```
 
-### `start`
+## Hosting
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
-
-```
+```bash
 npm run build
-# or
-yarn build
+npm run start
 ```
 
-## ⚙️ Deployment
+# Database Hosting
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+- You will need to run **MySQL** server _(this is where the data will be stored)_
 
-## 📚 Learn more
+> **Note**: Never connect the live hosted database on AWS to locally hosted database -- else database will **crash** and you will have to recreate it.
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+- Details regarding database have to be put into **.env** -- by default, MySQL will start database @ **127.0.0.1** + **3306**.
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+> **Note**: After creating database, make sure you create a collection called **tanthetaadb** in it - then, start strapi.
 
-## ✨ Community
+# Editing hardcoded parameters
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+- `./config/api.js` - change default, max & count parameters for apis
+- `./config/middleware.js` - change data limits
+- `./config/plugins.js` - change upload limits
 
----
+# Common Problems
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+## 1. Strapi stops working due to same field names.
+
+- **Never** give same name to different fields -- if you did it by mistake, then just go to `./src/api` & find your _collection name_. Under the collection folder, go to `content-types` directory + edit **schema.json**. There, just **edit** the fields with same names -- it will be shown in the _console error_.
+
+> **Note**: Do not change any other fields except those which are giving errors -- **otherwise** database will become corrupted.
+
+## 2. Strapi is giving long table/collection name error.
+
+- By default, Strapi gives **long names** to components + relations. Then, while making its corresponding tables, Strapi will _club_ those names together & form newer names.
+
+- Now, **SQL** databases _(like MySQL, Postgres, etc.)_ have a table name limit of **128** characters. Thus, you will have to _manually rename_ those long names.
+
+- To do that, go to `./src/components/shared` & find your corresponding collection -- then, only edit `collectionName` -- nothing else. This will resolve the error.
+
+> **Note**: After renaming, add them `changesInCollectionNames.md` file for **reference** to others.
