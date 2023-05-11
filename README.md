@@ -52,3 +52,5 @@ npm run start
 - To do that, go to `./src/components/shared` & find your corresponding collection -- then, only edit `collectionName` -- nothing else. This will resolve the error.
 
 > **Note**: After renaming, add them `changesInCollectionNames.md` file for **reference** to others.
+
+
